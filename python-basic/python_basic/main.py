@@ -1,4 +1,7 @@
 # 変数定義(グローバル変数)
+from datetime import datetime
+
+
 hello_world = "hello world from python"
 
 # 定数は大文字で
@@ -34,3 +37,12 @@ def for_func_sample():
             print("3より小さい")
 
 for_func_sample()
+
+date_now = datetime.now()
+
+print(date_now)
+print(date_now.year, date_now.month, date_now.day)
+
+date_formatted = date_now.strftime("%Y年%m月%d日 %H:%M:%S")
+
+print(date_formatted)
