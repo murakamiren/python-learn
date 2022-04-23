@@ -1,12 +1,36 @@
-helloWorld = "hello world from python"
+# 変数定義(グローバル変数)
+hello_world = "hello world from python"
 
-print(helloWorld)
+# 定数は大文字で
+CONST_LIKE = "const"
 
-def easyMath(x, y):
+# print: 出力, echo
+print(hello_world, CONST_LIKE)
+
+# def: function
+def easy_math(x, y):
     doubleX = x * 2
     ans = doubleX + y
     return ans
 
-answer = easyMath(5,9)
+answer = easy_math(5,9)
 
 print(answer)
+
+# 配列
+fruit_array = ["バナナ", "りんご", "ぶどう", "スイカ", "メロン", "いちご"]
+
+# for文
+for fruit in fruit_array:
+    print(fruit + "好き")
+
+number_array = [1,2,3,4,5]
+
+def for_func_sample():
+    for number in number_array:
+        if number >= 3:
+            print("3以上")
+        elif number < 3:
+            print("3より小さい")
+
+for_func_sample()
